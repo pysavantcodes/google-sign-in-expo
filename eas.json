@@ -1,0 +1,30 @@
+{
+    "cli": {
+      "version": ">= 4.0.1"
+    },
+    "build": {
+      "development": {
+        "developmentClient": true,
+        "distribution": "internal",
+        "ios": {
+          "resourceClass": "m-medium",
+          "simulator":true
+        }
+      },
+      "preview": {
+        "distribution": "internal",
+        "ios": {
+          "resourceClass": "m-medium"
+        },
+        "android": {
+          "buildType": "apk"
+        }
+      },
+      "production": {
+        "ios": {
+          "resourceClass": "m-medium"
+        }
+      }
+    }
+  }
+  
