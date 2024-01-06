@@ -55,9 +55,8 @@ export default function App() {
       {userInfo ? (
         <Button title="Logout" onPress={logout} />
       ) : (
-        <GoogleSigninButton
-          size={GoogleSigninButton.Size.Standard}
-          color={GoogleSigninButton.Color.Dark}
+        <Button
+        title="Sign in"
           onPress={signIn}
         />
       )}
